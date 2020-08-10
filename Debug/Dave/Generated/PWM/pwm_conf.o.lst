@@ -1,0 +1,142 @@
+   1              	 .syntax unified
+   2              	 .cpu cortex-m4
+   3              	 .eabi_attribute 27,3
+   4              	 .fpu fpv4-sp-d16
+   5              	 .eabi_attribute 20,1
+   6              	 .eabi_attribute 21,1
+   7              	 .eabi_attribute 23,3
+   8              	 .eabi_attribute 24,1
+   9              	 .eabi_attribute 25,1
+  10              	 .eabi_attribute 26,1
+  11              	 .eabi_attribute 30,6
+  12              	 .eabi_attribute 34,1
+  13              	 .eabi_attribute 18,4
+  14              	 .thumb
+  15              	 .file "pwm_conf.c"
+  16              	 .text
+  17              	.Ltext0:
+  18              	 .cfi_sections .debug_frame
+  19              	 .global pwm_clamp_open_and_close_compare_config
+  20              	 .section .rodata.pwm_clamp_open_and_close_compare_config,"a",%progbits
+  21              	 .align 2
+  24              	pwm_clamp_open_and_close_compare_config:
+  25 0000 00       	 .byte 0
+  26 0001 00       	 .byte 0
+  27 0002 00       	 .byte 0
+  28 0003 00       	 .byte 0
+  29 0004 06       	 .byte 6
+  30 0005 00       	 .byte 0
+  31 0006 0000     	 .space 2
+  32              	 .global pwm_clamp_open_and_close_gpio_out_config
+  33              	 .section .rodata.pwm_clamp_open_and_close_gpio_out_config,"a",%progbits
+  34              	 .align 2
+  37              	pwm_clamp_open_and_close_gpio_out_config:
+  38 0000 98       	 .byte -104
+  39 0001 000000   	 .space 3
+  40 0004 00000100 	 .word 65536
+  41 0008 00       	 .byte 0
+  42 0009 000000   	 .space 3
+  43              	 .global pwm_clamp_open_and_close
+  44              	 .section .data.pwm_clamp_open_and_close,"aw",%progbits
+  45              	 .align 2
+  48              	pwm_clamp_open_and_close:
+  49 0000 00000000 	 .word GLOBAL_CCU4_0
+  50 0004 00400048 	 .word 1207975936
+  51 0008 00440048 	 .word 1207976960
+  52 000c 00000000 	 .word pwm_clamp_open_and_close_compare_config
+  53 0010 00860248 	 .word 1208124928
+  54 0014 00000000 	 .word pwm_clamp_open_and_close_gpio_out_config
+  55 0018 C8AF0000 	 .word 45000
+  56 001c C7AF0000 	 .word 44999
+  57 0020 00000000 	 .word 0
+  58 0024 00500000 	 .word 20480
+  59 0028 00       	 .byte 0
+  60 0029 02       	 .byte 2
+  61 002a 00       	 .byte 0
+  62 002b 00       	 .byte 0
+  63 002c 02       	 .byte 2
+  64 002d 03       	 .byte 3
+  65 002e 03       	 .byte 3
+  66 002f 01       	 .byte 1
+  67 0030 00       	 .byte 0
+  68 0031 00       	 .byte 0
+  69 0032 0000     	 .space 2
+  70              	 .global pwm_clamp_up_and_down_compare_config
+  71              	 .section .rodata.pwm_clamp_up_and_down_compare_config,"a",%progbits
+  72              	 .align 2
+  75              	pwm_clamp_up_and_down_compare_config:
+  76 0000 00       	 .byte 0
+  77 0001 00       	 .byte 0
+  78 0002 00       	 .byte 0
+  79 0003 00       	 .byte 0
+  80 0004 06       	 .byte 6
+  81 0005 00       	 .byte 0
+  82 0006 0000     	 .space 2
+  83              	 .global pwm_clamp_up_and_down_gpio_out_config
+  84              	 .section .rodata.pwm_clamp_up_and_down_gpio_out_config,"a",%progbits
+  85              	 .align 2
+  88              	pwm_clamp_up_and_down_gpio_out_config:
+  89 0000 98       	 .byte -104
+  90 0001 000000   	 .space 3
+  91 0004 00000100 	 .word 65536
+  92 0008 04       	 .byte 4
+  93 0009 000000   	 .space 3
+  94              	 .global pwm_clamp_up_and_down
+  95              	 .section .data.pwm_clamp_up_and_down,"aw",%progbits
+  96              	 .align 2
+  99              	pwm_clamp_up_and_down:
+ 100 0000 00000000 	 .word GLOBAL_CCU4_1
+ 101 0004 00400140 	 .word 1073823744
+ 102 0008 00410140 	 .word 1073824000
+ 103 000c 00000000 	 .word pwm_clamp_up_and_down_compare_config
+ 104 0010 00830248 	 .word 1208124160
+ 105 0014 00000000 	 .word pwm_clamp_up_and_down_gpio_out_config
+ 106 0018 C8AF0000 	 .word 45000
+ 107 001c C7AF0000 	 .word 44999
+ 108 0020 00000000 	 .word 0
+ 109 0024 05000000 	 .word 5
+ 110 0028 00       	 .byte 0
+ 111 0029 02       	 .byte 2
+ 112 002a 00       	 .byte 0
+ 113 002b 00       	 .byte 0
+ 114 002c 00       	 .byte 0
+ 115 002d 02       	 .byte 2
+ 116 002e 00       	 .byte 0
+ 117 002f 01       	 .byte 1
+ 118 0030 00       	 .byte 0
+ 119 0031 00       	 .byte 0
+ 120 0032 0000     	 .space 2
+ 121              	 .text
+ 122              	.Letext0:
+ 123              	 .file 1 "c:\\users\\forge-15r\\dave-ide-4.4.2-64bit\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 124              	 .file 2 "c:\\users\\forge-15r\\dave-ide-4.4.2-64bit\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\stdint.h"
+ 125              	 .file 3 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Infineon/XMC4700_series/Include/XMC4700.h"
+ 126              	 .file 4 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc_gpio.h"
+ 127              	 .file 5 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc4_gpio.h"
+ 128              	 .file 6 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc_ccu4.h"
+ 129              	 .file 7 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc4_scu.h"
+ 130              	 .file 8 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Dave/Generated/GLOBAL_CCU4/global_ccu4.h"
+ 131              	 .file 9 "../Dave/Generated/PWM/pwm.h"
+ 132              	 .file 10 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Include/cmsis_gcc.h"
+ 133              	 .file 11 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Include/core_cm4.h"
+ 134              	 .file 12 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Infineon/XMC4700_series/Include/system_XMC4700.h"
+ 135              	 .file 13 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Dave/Generated/GLOBAL_CCU4/global_ccu4_extern.h"
+ 136              	 .file 14 "../Dave/Generated/PWM/pwm_conf.c"
+DEFINED SYMBOLS
+                            *ABS*:00000000 pwm_conf.c
+    {standard input}:24     .rodata.pwm_clamp_open_and_close_compare_config:00000000 pwm_clamp_open_and_close_compare_config
+    {standard input}:21     .rodata.pwm_clamp_open_and_close_compare_config:00000000 $d
+    {standard input}:37     .rodata.pwm_clamp_open_and_close_gpio_out_config:00000000 pwm_clamp_open_and_close_gpio_out_config
+    {standard input}:34     .rodata.pwm_clamp_open_and_close_gpio_out_config:00000000 $d
+    {standard input}:48     .data.pwm_clamp_open_and_close:00000000 pwm_clamp_open_and_close
+    {standard input}:45     .data.pwm_clamp_open_and_close:00000000 $d
+    {standard input}:75     .rodata.pwm_clamp_up_and_down_compare_config:00000000 pwm_clamp_up_and_down_compare_config
+    {standard input}:72     .rodata.pwm_clamp_up_and_down_compare_config:00000000 $d
+    {standard input}:88     .rodata.pwm_clamp_up_and_down_gpio_out_config:00000000 pwm_clamp_up_and_down_gpio_out_config
+    {standard input}:85     .rodata.pwm_clamp_up_and_down_gpio_out_config:00000000 $d
+    {standard input}:99     .data.pwm_clamp_up_and_down:00000000 pwm_clamp_up_and_down
+    {standard input}:96     .data.pwm_clamp_up_and_down:00000000 $d
+
+UNDEFINED SYMBOLS
+GLOBAL_CCU4_0
+GLOBAL_CCU4_1

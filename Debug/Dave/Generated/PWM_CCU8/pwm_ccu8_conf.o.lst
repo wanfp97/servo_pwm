@@ -1,0 +1,243 @@
+   1              	 .syntax unified
+   2              	 .cpu cortex-m4
+   3              	 .eabi_attribute 27,3
+   4              	 .fpu fpv4-sp-d16
+   5              	 .eabi_attribute 20,1
+   6              	 .eabi_attribute 21,1
+   7              	 .eabi_attribute 23,3
+   8              	 .eabi_attribute 24,1
+   9              	 .eabi_attribute 25,1
+  10              	 .eabi_attribute 26,1
+  11              	 .eabi_attribute 30,6
+  12              	 .eabi_attribute 34,1
+  13              	 .eabi_attribute 18,4
+  14              	 .thumb
+  15              	 .file "pwm_ccu8_conf.c"
+  16              	 .text
+  17              	.Ltext0:
+  18              	 .cfi_sections .debug_frame
+  19              	 .global clamp_timer_handle
+  20              	 .section .rodata.clamp_timer_handle,"a",%progbits
+  21              	 .align 2
+  24              	clamp_timer_handle:
+  25 0000 00       	 .byte 0
+  26 0001 00       	 .byte 0
+  27 0002 00       	 .byte 0
+  28 0003 06       	 .byte 6
+  29 0004 05       	 .byte 5
+  30 0005 000000   	 .space 3
+  31 0008 14       	 .byte 20
+  32 0009 000000   	 .space 3
+  33 000c 07       	 .byte 7
+  34 000d 00       	 .byte 0
+  35 000e 0000     	 .space 2
+  36              	 .global clamp_event0_config
+  37              	 .section .rodata.clamp_event0_config,"a",%progbits
+  38              	 .align 2
+  41              	clamp_event0_config:
+  42 0000 00       	 .byte 0
+  43 0001 00       	 .byte 0
+  44 0002 01       	 .byte 1
+  45 0003 00       	 .byte 0
+  46              	 .global clamp_event1_config
+  47              	 .section .rodata.clamp_event1_config,"a",%progbits
+  48              	 .align 2
+  51              	clamp_event1_config:
+  52 0000 00       	 .byte 0
+  53 0001 00       	 .byte 0
+  54 0002 01       	 .byte 1
+  55 0003 00       	 .byte 0
+  56              	 .global clamp_event2_config
+  57              	 .section .rodata.clamp_event2_config,"a",%progbits
+  58              	 .align 2
+  61              	clamp_event2_config:
+  62 0000 00       	 .byte 0
+  63 0001 00       	 .byte 0
+  64 0002 01       	 .byte 1
+  65 0003 00       	 .byte 0
+  66              	 .global clamp_dt_config
+  67              	 .section .rodata.clamp_dt_config,"a",%progbits
+  68              	 .align 2
+  71              	clamp_dt_config:
+  72 0000 00000000 	 .space 12
+  72      00000000 
+  72      00000000 
+  73              	 .global clamp_ch1_out0_config
+  74              	 .section .rodata.clamp_ch1_out0_config,"a",%progbits
+  75              	 .align 2
+  78              	clamp_ch1_out0_config:
+  79 0000 98       	 .byte -104
+  80 0001 000000   	 .space 3
+  81 0004 00000100 	 .word 65536
+  82 0008 00       	 .byte 0
+  83 0009 000000   	 .space 3
+  84              	 .global clamp_ch1_out1_config
+  85              	 .section .rodata.clamp_ch1_out1_config,"a",%progbits
+  86              	 .align 2
+  89              	clamp_ch1_out1_config:
+  90 0000 98       	 .byte -104
+  91 0001 000000   	 .space 3
+  92 0004 00000100 	 .word 65536
+  93 0008 00       	 .byte 0
+  94 0009 000000   	 .space 3
+  95              	 .global clamp_ch2_out2_config
+  96              	 .section .rodata.clamp_ch2_out2_config,"a",%progbits
+  97              	 .align 2
+ 100              	clamp_ch2_out2_config:
+ 101 0000 98       	 .byte -104
+ 102 0001 000000   	 .space 3
+ 103 0004 00000100 	 .word 65536
+ 104 0008 00       	 .byte 0
+ 105 0009 000000   	 .space 3
+ 106              	 .global clamp_ch2_out3_config
+ 107              	 .section .rodata.clamp_ch2_out3_config,"a",%progbits
+ 108              	 .align 2
+ 111              	clamp_ch2_out3_config:
+ 112 0000 98       	 .byte -104
+ 113 0001 000000   	 .space 3
+ 114 0004 00000100 	 .word 65536
+ 115 0008 00       	 .byte 0
+ 116 0009 000000   	 .space 3
+ 117              	 .global clamp_config_handle
+ 118              	 .section .rodata.clamp_config_handle,"a",%progbits
+ 119              	 .align 2
+ 122              	clamp_config_handle:
+ 123 0000 01       	 .byte 1
+ 124 0001 00       	 .space 1
+ 125 0002 E357     	 .short 22499
+ 126 0004 2256     	 .short 22050
+ 127 0006 1A4F     	 .short 20250
+ 128 0008 00       	 .byte 0
+ 129 0009 00       	 .byte 0
+ 130 000a 00       	 .byte 0
+ 131 000b 00       	 .byte 0
+ 132 000c 00       	 .byte 0
+ 133 000d 00       	 .byte 0
+ 134 000e 00       	 .byte 0
+ 135 000f 00       	 .byte 0
+ 136 0010 00       	 .byte 0
+ 137 0011 00       	 .byte 0
+ 138 0012 00       	 .byte 0
+ 139 0013 00       	 .byte 0
+ 140 0014 00       	 .byte 0
+ 141 0015 00       	 .byte 0
+ 142 0016 00       	 .byte 0
+ 143 0017 00       	 .byte 0
+ 144 0018 00       	 .byte 0
+ 145 0019 00       	 .byte 0
+ 146 001a 0000     	 .space 2
+ 147 001c 00000000 	 .word clamp_event0_config
+ 148 0020 00000000 	 .word clamp_event1_config
+ 149 0024 00000000 	 .word clamp_event2_config
+ 150 0028 00       	 .byte 0
+ 151 0029 00       	 .byte 0
+ 152 002a 00       	 .byte 0
+ 153 002b 00       	 .byte 0
+ 154 002c 00       	 .byte 0
+ 155 002d 00       	 .byte 0
+ 156 002e 00       	 .byte 0
+ 157 002f 00       	 .byte 0
+ 158 0030 00       	 .byte 0
+ 159 0031 00       	 .byte 0
+ 160 0032 00       	 .byte 0
+ 161 0033 00       	 .byte 0
+ 162 0034 00       	 .byte 0
+ 163 0035 00       	 .byte 0
+ 164 0036 00       	 .byte 0
+ 165 0037 00       	 .byte 0
+ 166 0038 01       	 .byte 1
+ 167 0039 00       	 .byte 0
+ 168 003a 0000     	 .space 2
+ 169 003c 00000020 	 .word 536870912
+ 170 0040 00000000 	 .word clamp_dt_config
+ 171 0044 01       	 .byte 1
+ 172 0045 000000   	 .space 3
+ 173 0048 00000000 	 .word clamp_timer_handle
+ 174 004c 01       	 .byte 1
+ 175 004d 000000   	 .space 3
+ 176 0050 00860248 	 .word 1208124928
+ 177 0054 01       	 .byte 1
+ 178 0055 000000   	 .space 3
+ 179 0058 00000000 	 .word clamp_ch1_out0_config
+ 180 005c 01       	 .byte 1
+ 181 005d 000000   	 .space 3
+ 182 0060 00860248 	 .word 1208124928
+ 183 0064 00       	 .byte 0
+ 184 0065 000000   	 .space 3
+ 185 0068 00000000 	 .word clamp_ch1_out1_config
+ 186 006c 01       	 .byte 1
+ 187 006d 000000   	 .space 3
+ 188 0070 00850248 	 .word 1208124672
+ 189 0074 01       	 .byte 1
+ 190 0075 000000   	 .space 3
+ 191 0078 00000000 	 .word clamp_ch2_out2_config
+ 192 007c 01       	 .byte 1
+ 193 007d 000000   	 .space 3
+ 194 0080 00850248 	 .word 1208124672
+ 195 0084 00       	 .byte 0
+ 196 0085 000000   	 .space 3
+ 197 0088 00000000 	 .word clamp_ch2_out3_config
+ 198 008c 00000000 	 .word GLOBAL_CCU8_0
+ 199              	 .global clamp
+ 200              	 .section .data.clamp,"aw",%progbits
+ 201              	 .align 2
+ 204              	clamp:
+ 205 0000 00000000 	 .word clamp_config_handle
+ 206 0004 00400240 	 .word 1073889280
+ 207 0008 00440240 	 .word 1073890304
+ 208 000c 01       	 .byte 1
+ 209 000d 03       	 .byte 3
+ 210 000e 0000     	 .space 2
+ 211 0010 00100000 	 .word 4096
+ 212 0014 00200000 	 .word 8192
+ 213 0018 00400000 	 .word 16384
+ 214 001c 00       	 .byte 0
+ 215 001d 00000000 	 .space 7
+ 215      000000
+ 216 0024 C8000000 	 .word 200
+ 217 0028 E8030000 	 .word 1000
+ 218 002c 00000000 	 .word 0
+ 219 0030 00000000 	 .word 0
+ 220              	 .text
+ 221              	.Letext0:
+ 222              	 .file 1 "c:\\users\\forge-15r\\dave-ide-4.4.2-64bit\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 223              	 .file 2 "c:\\users\\forge-15r\\dave-ide-4.4.2-64bit\\eclipse\\arm-gcc-49\\arm-none-eabi\\include\\stdint.h"
+ 224              	 .file 3 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Infineon/XMC4700_series/Include/XMC4700.h"
+ 225              	 .file 4 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc_gpio.h"
+ 226              	 .file 5 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc4_gpio.h"
+ 227              	 .file 6 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc_ccu8.h"
+ 228              	 .file 7 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/XMCLib/inc/xmc4_scu.h"
+ 229              	 .file 8 "../Dave/Generated/PWM_CCU8/../GLOBAL_CCU8/global_ccu8.h"
+ 230              	 .file 9 "../Dave/Generated/PWM_CCU8/pwm_ccu8.h"
+ 231              	 .file 10 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Include/cmsis_gcc.h"
+ 232              	 .file 11 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Include/core_cm4.h"
+ 233              	 .file 12 "C:/Workspaces/DAVE-4.4.2-64Bit/test/servo_pwm/Libraries/CMSIS/Infineon/XMC4700_series/Include/system_XMC4700.h"
+ 234              	 .file 13 "../Dave/Generated/PWM_CCU8/../GLOBAL_CCU8/global_ccu8_extern.h"
+ 235              	 .file 14 "../Dave/Generated/PWM_CCU8/pwm_ccu8_conf.c"
+DEFINED SYMBOLS
+                            *ABS*:00000000 pwm_ccu8_conf.c
+    {standard input}:24     .rodata.clamp_timer_handle:00000000 clamp_timer_handle
+    {standard input}:21     .rodata.clamp_timer_handle:00000000 $d
+    {standard input}:41     .rodata.clamp_event0_config:00000000 clamp_event0_config
+    {standard input}:38     .rodata.clamp_event0_config:00000000 $d
+    {standard input}:51     .rodata.clamp_event1_config:00000000 clamp_event1_config
+    {standard input}:48     .rodata.clamp_event1_config:00000000 $d
+    {standard input}:61     .rodata.clamp_event2_config:00000000 clamp_event2_config
+    {standard input}:58     .rodata.clamp_event2_config:00000000 $d
+    {standard input}:71     .rodata.clamp_dt_config:00000000 clamp_dt_config
+    {standard input}:68     .rodata.clamp_dt_config:00000000 $d
+    {standard input}:78     .rodata.clamp_ch1_out0_config:00000000 clamp_ch1_out0_config
+    {standard input}:75     .rodata.clamp_ch1_out0_config:00000000 $d
+    {standard input}:89     .rodata.clamp_ch1_out1_config:00000000 clamp_ch1_out1_config
+    {standard input}:86     .rodata.clamp_ch1_out1_config:00000000 $d
+    {standard input}:100    .rodata.clamp_ch2_out2_config:00000000 clamp_ch2_out2_config
+    {standard input}:97     .rodata.clamp_ch2_out2_config:00000000 $d
+    {standard input}:111    .rodata.clamp_ch2_out3_config:00000000 clamp_ch2_out3_config
+    {standard input}:108    .rodata.clamp_ch2_out3_config:00000000 $d
+    {standard input}:122    .rodata.clamp_config_handle:00000000 clamp_config_handle
+    {standard input}:119    .rodata.clamp_config_handle:00000000 $d
+    {standard input}:204    .data.clamp:00000000 clamp
+    {standard input}:201    .data.clamp:00000000 $d
+
+UNDEFINED SYMBOLS
+GLOBAL_CCU8_0
